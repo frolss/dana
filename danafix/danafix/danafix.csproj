@@ -59,7 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="first_application.cs" />
+    <Compile Include="DataClass\FirstStepData.cs" />
+    <Compile Include="DataClass\HomePageData.cs" />
+    <Compile Include="web_tests\first_application.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WaitUntil.cs" />
   </ItemGroup>
