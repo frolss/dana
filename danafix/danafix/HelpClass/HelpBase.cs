@@ -10,13 +10,13 @@ using OpenQA.Selenium.Support.UI;
 
 namespace danafix
 {
-    public class HomePageData
+    public class HelpBase
     {
-        public HomePageData(string mobilephone)
-        {
-            Mobilephone = mobilephone;
-        }
+        protected IWebDriver driver;
 
-        public string Mobilephone { get; set; }
+        public HelpBase(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
     }
 }

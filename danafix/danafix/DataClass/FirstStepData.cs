@@ -10,68 +10,22 @@ using OpenQA.Selenium.Support.UI;
 
 namespace danafix
 {
-    class FirstStepData
+    public class FirstStepData
     {
-        private string name;
-        private string email;
-        private string birthdate;
-        private string birthplace;
-
         public FirstStepData(string name)
         {
-            this.name = name;
+            Name = name;
         }
         public FirstStepData(string name, string email, string birthdate, string birthplace) //этот конструктор можно удалить
         {
-            this.name = name;
-            this.email = email;
-            this.birthdate = birthdate;
-            this.birthplace = birthplace;
+            Name = name;
+            Email = email;
+            Birthdate = birthdate;
+            Birthplace = birthplace;
         }
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-        public string Email
-        {
-            get
-            {
-                return email;
-            }
-            set
-            {
-                email = value;
-            }
-        }
-        public string Birthdate
-        {
-            get
-            {
-                return birthdate;
-            }
-            set
-            {
-                birthdate = value;
-            }
-        }
-        public string Birthplace
-        {
-            get
-            {
-                return birthplace;
-            }
-            set
-            {
-                birthplace = value;
-            }
-        }
-
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Birthdate { get; set; }
+        public string Birthplace { get; set; }
     }
 }

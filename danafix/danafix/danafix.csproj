@@ -61,13 +61,19 @@
   <ItemGroup>
     <Compile Include="DataClass\FirstStepData.cs" />
     <Compile Include="DataClass\HomePageData.cs" />
+    <Compile Include="HelpClass\FirstStepHelper.cs" />
+    <Compile Include="HelpClass\HelpBase.cs" />
+    <Compile Include="HelpClass\HomePageHelper.cs" />
+    <Compile Include="HelpClass\NavigateHelper.cs" />
     <Compile Include="web_tests\first_application.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WaitUntil.cs" />
+    <Compile Include="HelpClass\WaitUntil.cs" />
+    <Compile Include="web_tests\TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
