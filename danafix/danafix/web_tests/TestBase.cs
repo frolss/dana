@@ -15,6 +15,7 @@ namespace danafix
         public IWebDriver driver;
         private StringBuilder verificationErrors;
         public string baseURL;
+        public string baseURLadmin;
         protected FirstStepHelper firstStepHelper;
         protected HomePageHelper homePageHelper;
         protected NavigateHelper navigateHelper;
@@ -28,7 +29,7 @@ namespace danafix
 
             homePageHelper = new HomePageHelper(driver);
             firstStepHelper = new FirstStepHelper(driver);
-            navigateHelper = new NavigateHelper(driver, baseURL);
+            navigateHelper = new NavigateHelper(driver, baseURL, baseURLadmin);
         }
 
         [TearDown]

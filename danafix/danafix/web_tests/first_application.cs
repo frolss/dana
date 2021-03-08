@@ -25,6 +25,6 @@ namespace danafix
             firstStepHelper.FirstStep(data);
 
 
-        }        
+        }
     }
 }

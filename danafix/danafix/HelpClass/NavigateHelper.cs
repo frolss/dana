@@ -13,13 +13,20 @@ namespace danafix
     public class NavigateHelper : HelpBase
     {
         private string baseURL;
-        public NavigateHelper(IWebDriver driver, string baseURL) : base(driver)
+        private string baseURLadmin;
+        public NavigateHelper(IWebDriver driver, string baseURL, string baseURLadmin) : base(driver)
         {
             this.baseURL = baseURL;
+            this.baseURLadmin = baseURLadmin;
         }
         public void OpenHomePage()
         {
             driver.Navigate().GoToUrl(baseURL);
+        }
+
+        public void OpenAdminPage()
+        {
+            driver.Navigate().GoToUrl(baseURLadmin);
         }
     }
 }
