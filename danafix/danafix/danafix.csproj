@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="DataClass\FirstStepData.cs" />
     <Compile Include="DataClass\HomePageData.cs" />
+    <Compile Include="HelpClass\ApplicationManager.cs" />
     <Compile Include="HelpClass\FirstStepHelper.cs" />
     <Compile Include="HelpClass\HelpBase.cs" />
     <Compile Include="HelpClass\HomePageHelper.cs" />

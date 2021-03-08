@@ -12,38 +12,18 @@ namespace danafix
 {
     public class TestBase
     {
-        public IWebDriver driver;
-        private StringBuilder verificationErrors;
-        public string baseURL;
-        public string baseURLadmin;
-        protected FirstStepHelper firstStepHelper;
-        protected HomePageHelper homePageHelper;
-        protected NavigateHelper navigateHelper;
+        protected ApplicationManager app;
 
         [SetUp]
         public void SetupTest()
         {
-            driver = new FirefoxDriver();
-            baseURL = "https://dev.danafix.id";
-            verificationErrors = new StringBuilder();
-
-            homePageHelper = new HomePageHelper(driver);
-            firstStepHelper = new FirstStepHelper(driver);
-            navigateHelper = new NavigateHelper(driver, baseURL, baseURLadmin);
+            app = new ApplicationManager();
         }
 
         [TearDown]
         public void TeardownTest()
         {
-            try
-            {
-                driver.Quit();
-            }
-            catch (Exception)
-            {
-                // Ignore errors if unable to close the browser
-            }
-            Assert.AreEqual("", verificationErrors.ToString());
+            app.Stop();
         }               
     }
 }
