@@ -16,7 +16,7 @@ namespace danafix
         public FirstStepHelper(ApplicationManager manager) : base(manager)                                                                                                                                                                                    
         {
         }
-        public void FirstStep(FirstStepData account)
+        public void FirstStep(DataContact account)
         {
             WaitUntil.WaitElement(driver,By.Id("application_full_name"));
             driver.FindElement(By.Id("application_full_name")).Click();

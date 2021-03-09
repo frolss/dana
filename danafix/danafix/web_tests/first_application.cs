@@ -16,7 +16,7 @@ namespace danafix
         public void web_first_application()
         {
             HomePageData phone = new HomePageData("08 2689521987");
-            FirstStepData data = new FirstStepData("Doro Goro");
+            DataContact data = new DataContact("Doro Goro");
             data.Email = "goro@mail.ru";
             data.Birthdate = "10.10.1990";
             data.Birthplace = "Testo";

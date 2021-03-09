@@ -16,7 +16,7 @@ namespace danafix
         {
         }
 
-        public void SecondStep(FirstStepData address)
+        public void SecondStep(DataContact address)
         {
             WaitUntil.WaitElement(driver, By.Id("application_full_address"));
             WaitUntil.WaitSomeTime(3);

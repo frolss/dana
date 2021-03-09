@@ -10,9 +10,9 @@ using OpenQA.Selenium.Support.UI;
 
 namespace danafix
 {
-    public class FirstStepData
+    public class DataContact
     {
-        public FirstStepData(string name)
+        public DataContact(string name)
         {
             Name = name;
         }
