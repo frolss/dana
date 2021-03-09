@@ -13,12 +13,12 @@ namespace danafix
 {
     public class FirstStepHelper : HelpBase
     {
-        public FirstStepHelper(IWebDriver driver) : base(driver)                                                                                                                                                                                    
+        public FirstStepHelper(ApplicationManager manager) : base(manager)                                                                                                                                                                                    
         {
         }
         public void FirstStep(FirstStepData account)
         {
-            WaitUntil.WaitElement(driver, By.Id("application_full_name"));
+            WaitUntil.WaitElement(driver,By.Id("application_full_name"));
             driver.FindElement(By.Id("application_full_name")).Click();
             driver.FindElement(By.Id("application_full_name")).SendKeys(account.Name);
             WaitUntil.WaitSomeTime(2);

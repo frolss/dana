@@ -66,6 +66,7 @@
     <Compile Include="HelpClass\HelpBase.cs" />
     <Compile Include="HelpClass\HomePageHelper.cs" />
     <Compile Include="HelpClass\NavigateHelper.cs" />
+    <Compile Include="HelpClass\SecondStepHelper.cs" />
     <Compile Include="web_tests\first_application.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HelpClass\WaitUntil.cs" />

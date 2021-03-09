@@ -12,7 +12,7 @@ namespace danafix
 {
     public class HomePageHelper : HelpBase
     {
-        public HomePageHelper(IWebDriver driver) : base(driver)
+        public HomePageHelper(ApplicationManager manager) : base(manager)
         {
         }
         public void PhoneNumberInput(HomePageData phone)

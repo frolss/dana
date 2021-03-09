@@ -18,6 +18,7 @@ namespace danafix
         public void SetupTest()
         {
             app = new ApplicationManager();
+            app.Navigate.OpenHomePage();
         }
 
         [TearDown]

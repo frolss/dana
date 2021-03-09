@@ -14,7 +14,7 @@ namespace danafix
     {
         private string baseURL;
         private string baseURLadmin;
-        public NavigateHelper(IWebDriver driver, string baseURL, string baseURLadmin) : base(driver)
+        public NavigateHelper(ApplicationManager manager, string baseURL, string baseURLadmin) : base(manager)
         {
             this.baseURL = baseURL;
             this.baseURLadmin = baseURLadmin;

@@ -16,19 +16,30 @@ namespace danafix
         public IWebDriver driver;
         public string baseURL;
         public string baseURLadmin;
+
         public FirstStepHelper firstStepHelper;
         public HomePageHelper homePageHelper;
         public NavigateHelper navigateHelper;
+        public SecondStepHelper secondStepHelper;
 
         public ApplicationManager()
         {
             driver = new FirefoxDriver();
             baseURL = "https://dev.danafix.id";
-            homePageHelper = new HomePageHelper(driver);
-            firstStepHelper = new FirstStepHelper(driver);
-            navigateHelper = new NavigateHelper(driver, baseURL, baseURLadmin);
+
+            homePageHelper = new HomePageHelper(this);
+            firstStepHelper = new FirstStepHelper(this);
+            navigateHelper = new NavigateHelper(this, baseURL, baseURLadmin);
+            secondStepHelper = new SecondStepHelper(this);
         }
 
+        public IWebDriver Driver
+        {
+            get
+            {
+                return driver;
+            }
+        }
         public void Stop()
         {   
             try
@@ -40,5 +51,39 @@ namespace danafix
                 // Ignore errors if unable to close the browser
             }
         }
+
+        public HomePageHelper HomePage
+        {
+            get
+            {
+                return homePageHelper;
+            }
+        }
+
+        public FirstStepHelper FirstStep
+        {
+            get
+            {
+                return firstStepHelper;
+            }
+        }
+
+        public NavigateHelper Navigate
+        {
+            get
+            {
+                return navigateHelper;
+            }
+        }
+
+        public SecondStepHelper SecondStep
+        {
+            get
+            {
+                return secondStepHelper;
+            }
+        }
+
+        
     }
 }

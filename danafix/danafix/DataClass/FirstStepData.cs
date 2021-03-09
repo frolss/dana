@@ -16,16 +16,17 @@ namespace danafix
         {
             Name = name;
         }
-        public FirstStepData(string name, string email, string birthdate, string birthplace) //этот конструктор можно удалить
+        /*public FirstStepData(string name, string email, string birthdate, string birthplace) //этот конструктор можно удалить
         {
             Name = name;
             Email = email;
             Birthdate = birthdate;
             Birthplace = birthplace;
-        }
+        }*/
         public string Name { get; set; }
         public string Email { get; set; }
         public string Birthdate { get; set; }
         public string Birthplace { get; set; }
+        public string Address { get; set; }
     }
 }

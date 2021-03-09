@@ -15,15 +15,16 @@ namespace danafix
         [Test]
         public void web_first_application()
         {
-            app.navigateHelper.OpenHomePage();
-            app.homePageHelper.PhoneNumberInput(new HomePageData("08 2689521987"));
-
+            HomePageData phone = new HomePageData("08 2689521987");
             FirstStepData data = new FirstStepData("Doro Goro");
             data.Email = "goro@mail.ru";
             data.Birthdate = "10.10.1990";
             data.Birthplace = "Testo";
-            app.firstStepHelper.FirstStep(data);
+            data.Address = "Pengotan, Kec. Bangli";
 
+            app.HomePage.PhoneNumberInput(phone);
+            app.FirstStep.FirstStep(data);
+            app.SecondStep.SecondStep(data);
 
         }
     }

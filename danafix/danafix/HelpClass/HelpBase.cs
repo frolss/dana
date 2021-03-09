@@ -12,11 +12,13 @@ namespace danafix
 {
     public class HelpBase
     {
+        protected ApplicationManager manager;
         protected IWebDriver driver;
 
-        public HelpBase(IWebDriver driver)
+        public HelpBase(ApplicationManager manager)
         {
-            this.driver = driver;
+            this.manager = manager;
+            this.driver = manager.Driver;
         }
     }
 }
