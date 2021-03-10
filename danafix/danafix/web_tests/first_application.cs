@@ -21,10 +21,13 @@ namespace danafix
             data.Birthdate = "10.10.1990";
             data.Birthplace = "Testo";
             data.Address = "Pengotan, Kec. Bangli";
+            data.Guarantorphone = "08 2689525896";
+            data.Salary = "15.000.000";
 
             app.HomePage.PhoneNumberInput(phone);
             app.FirstStep.FirstStep(data);
             app.SecondStep.SecondStep(data);
+            app.ThirdStep.ThirdStep(data);
 
         }
     }

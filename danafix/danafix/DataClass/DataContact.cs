@@ -28,5 +28,7 @@ namespace danafix
         public string Birthdate { get; set; }
         public string Birthplace { get; set; }
         public string Address { get; set; }
+        public string Guarantorphone { get; set; }
+        public string Salary { get; set; }
     }
 }
