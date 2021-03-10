@@ -18,11 +18,11 @@ namespace danafix
 
         public void FourthStep()
         {
-            //WaitUntil.WaitElement(driver, By.Id("front_ktp"));
-            WaitUntil.WaitSomeTime(3);
+            WaitUntil.WaitElement(driver, By.XPath("//div[text()='Upload foto KTP']"));
+            WaitUntil.WaitSomeTime(10);
             driver.FindElement(By.Id("front_ktp")).Click();
-            driver.FindElement(By.Id("front_ktp")).Clear();
-            driver.FindElement(By.Id("front_ktp")).SendKeys("C:\\fakepath\\images (6).jpg");
+            //driver.FindElement(By.Id("front_ktp")).Clear();
+            //driver.FindElement(By.Id("front_ktp")).SendKeys("C:\\fakepath\\images (6).jpg");
         }
     }
 }
