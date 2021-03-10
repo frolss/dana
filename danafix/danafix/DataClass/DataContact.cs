@@ -30,5 +30,7 @@ namespace danafix
         public string Address { get; set; }
         public string Guarantorphone { get; set; }
         public string Salary { get; set; }
+        public string Ktp { get; set; }
+        public string AccounNumber { get; set; }
     }
 }

@@ -62,7 +62,9 @@
     <Compile Include="DataClass\DataContact.cs" />
     <Compile Include="DataClass\HomePageData.cs" />
     <Compile Include="HelpClass\ApplicationManager.cs" />
+    <Compile Include="HelpClass\FifthStepHelper.cs" />
     <Compile Include="HelpClass\FirstStepHelper.cs" />
+    <Compile Include="HelpClass\FourthStepHelper.cs" />
     <Compile Include="HelpClass\HelpBase.cs" />
     <Compile Include="HelpClass\HomePageHelper.cs" />
     <Compile Include="HelpClass\NavigateHelper.cs" />

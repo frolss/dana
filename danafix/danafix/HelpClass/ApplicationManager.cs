@@ -22,6 +22,8 @@ namespace danafix
         public NavigateHelper navigateHelper;
         public SecondStepHelper secondStepHelper;
         public ThirdStepHelper thirdStepHelper;
+        public FourthStepHelper fourthStepHelper;
+        public FifthStepHelper fifthStepHelper;
 
         public ApplicationManager()
         {
@@ -33,6 +35,8 @@ namespace danafix
             navigateHelper = new NavigateHelper(this, baseURL, baseURLadmin);
             secondStepHelper = new SecondStepHelper(this);
             thirdStepHelper = new ThirdStepHelper(this);
+            fourthStepHelper = new FourthStepHelper(this);
+            fifthStepHelper = new FifthStepHelper(this);
         }
 
         public IWebDriver Driver
@@ -91,6 +95,22 @@ namespace danafix
             get
             {
                 return thirdStepHelper;
+            }
+        }
+
+        public FourthStepHelper FourthStep
+        {
+            get
+            {
+                return fourthStepHelper;
+            }
+        }
+
+        public FifthStepHelper FifthStep
+        {
+            get
+            {
+                return fifthStepHelper;
             }
         }
 
