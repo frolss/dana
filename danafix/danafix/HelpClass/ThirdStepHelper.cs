@@ -18,7 +18,7 @@ namespace danafix
         public void ThirdStep (DataContact data)
         {
             WaitUntil.WaitElement(driver, By.Id("application_relative_mobile_phone"));
-            WaitUntil.WaitSomeTime(3);
+            WaitUntil.WaitSomeTime(10);
             driver.FindElement(By.Id("select2-application_education_code-container")).Click();
             WaitUntil.WaitSomeTime(3);
             driver.FindElement(By.XPath("//li[text()='Diploma 3 (D3)']")).Click();

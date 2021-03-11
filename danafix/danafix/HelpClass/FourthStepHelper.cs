@@ -19,8 +19,12 @@ namespace danafix
         public void FourthStep()
         {
             WaitUntil.WaitElement(driver, By.XPath("//div[text()='Upload foto KTP']"));
-            WaitUntil.WaitSomeTime(10);
-            driver.FindElement(By.Id("front_ktp")).Click();
+            WaitUntil.WaitSomeTime(3);
+            driver.FindElement(By.XPath("//input[@type = 'file'][@id = 'front_ktp']")).SendKeys("C:\\Users\\Владелец\\Downloads\\foto.png");
+            WaitUntil.WaitElement(driver, By.CssSelector("div.fileinput__text_ktp.upload.ok"));
+            driver.FindElement(By.XPath("//input[@type = 'file'][@id = 'selfie_with_ktp']")).SendKeys("C:\\Users\\Владелец\\Downloads\\selfi.jpg");
+            WaitUntil.WaitElement(driver, By.CssSelector("div.fileinput__text_selfie.upload.ok"));
+            driver.FindElement(By.Name("commit")).Click();
             //driver.FindElement(By.Id("front_ktp")).Clear();
             //driver.FindElement(By.Id("front_ktp")).SendKeys("C:\\fakepath\\images (6).jpg");
         }
