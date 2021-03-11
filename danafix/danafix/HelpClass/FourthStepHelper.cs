@@ -25,8 +25,6 @@ namespace danafix
             driver.FindElement(By.XPath("//input[@type = 'file'][@id = 'selfie_with_ktp']")).SendKeys("C:\\Users\\Владелец\\Downloads\\selfi.jpg");
             WaitUntil.WaitElement(driver, By.CssSelector("div.fileinput__text_selfie.upload.ok"));
             driver.FindElement(By.Name("commit")).Click();
-            //driver.FindElement(By.Id("front_ktp")).Clear();
-            //driver.FindElement(By.Id("front_ktp")).SendKeys("C:\\fakepath\\images (6).jpg");
         }
     }
 }
